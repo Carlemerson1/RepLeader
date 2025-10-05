@@ -4,8 +4,71 @@
   <title>Repleader</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-  <h1>Repleader</h1>
-  <p>This is where u see how strong u are</p>
+  <header>
+    <button class = "menu-button">☰</button>
+    <div class = "nav-links">
+      <a href="google.com">Log In</a>
+      <a href="google.com">Sign Up</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>RepLeader</h1>
+    <div class="form-container">
+      <div class = "form-group">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter Age">
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Body Weight</label>
+        <input type="number" id="weight" placeholder="Enter Weight">
+      </div>
+
+      <div class="form-group">
+        <label for="exercise">Exercise Type</label>
+        <select id="exercise">
+          <option value="">Select exercise</option>
+          <option value="placeholder1">Placeholder 1</option>
+          <option value="placeholder2">Placeholder 2</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="lift">Lift Weight</label>
+        <div class="inline-group">
+          <input type="number" id="lift" placeholder="Enter weight lifted">
+          <select id="unit">
+            <option value="lb">lb</option>
+            <option value="kg">kg</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="reps">Repetitions</label>
+        <input type="number" id="reps" placeholder="Enter repetitions">
+      </div>
+
+      <button type="button">Calculate</button>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2025 RepLeader. All rights reserved.
+  </footer>
+
 </body>
 </html>
